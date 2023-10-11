@@ -1,0 +1,255 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.text-blue {
+  color: #014979;
+}
+
+.bg-blue {
+  background-color: #014979;
+}
+
+body {
+  font-family: sans-serif;
+  user-select: none;
+}
+
+html::-webkit-scrollbar {
+  width: 0px;
+}
+
+/* Header */
+.icons {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid #014979;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  font-size: 23px;
+}
+
+.icons a {
+  color: #014979 !important;
+
+}
+
+.btn {
+
+  background-color: #014979 !important;
+}
+
+/* Banner */
+.banner {
+  background-image: url(../img/Group\ 5\ \(1\).jpg);
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.banner {
+  position: relative;
+}
+
+.banner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.65);
+  /* Adjust the opacity as needed (0.5 means 50% opacity) */
+}
+
+/* About Content */
+.about-content h5 {
+  font-size: 19px;
+}
+
+/* Service */
+
+.service {
+  background-image: url(../img/image\ 25.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.service-items img {
+  border-top-right-radius: 7px;
+  border-top-left-radius: 7px;
+}
+
+.service-title {
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.container_ {
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn {
+  /* padding: 10px 60px; */
+  background-color: #fff;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  font-size: 22px;
+  font-weight: 500;
+  border-radius: 30px
+}
+
+.popup {
+  z-index: 9;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  position: fixed;
+  height: 100vh;
+  background-color: #fff;
+  border-radius: 6px;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.1);
+  visibility: hidden;
+  text-align: center;
+  transition: transform 0.4s, top 0.4s;
+  padding: 0 30px 30px;
+  z-index: 9999;
+  color: #333;
+}
+
+.popup img {
+  width: 100px;
+  margin-top: -50px;
+  border-radius: 50%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2)
+}
+
+.popup h2 {
+  font-size: 38px;
+  font-weight: 500;
+  margin: 30px 0 10px;
+}
+
+.open-popup {
+  visibility: visible;
+  top: 50%;
+  transform: translate(-50%, -50%) scale(1);
+
+}
+
+.popup button {
+  margin-top: 50px;
+  background-color: #6fd649;
+  color: #fff;
+  border: 0;
+  outline: none;
+  font-size: 18px;
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2)
+}
+
+
+/*  */
+
+
+.question {
+  width: 75%;
+}
+
+.options {
+  position: relative;
+  padding-left: 32px;
+}
+
+#options label {
+  display: block;
+  margin-bottom: 15px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.options input {
+  opacity: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: -1px;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  /* background-color: #555; */
+  border: 1.5px solid #6c757d;
+  border-radius: 50%;
+}
+
+.options input:checked~.checkmark:after {
+  display: block;
+}
+
+.options .checkmark:after {
+  content: "";
+  width: 10px;
+  height: 10px;
+  display: block;
+  background: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 300ms ease-in-out 0s;
+}
+
+.options input[type="radio"]:checked~.checkmark {
+  background: #014979;
+  transition: 300ms ease-in-out 0s;
+}
+
+.options input[type="radio"]:checked~.checkmark:after {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.btn-primary {
+  background-color: #555;
+  color: #ddd;
+  border: 1px solid #ddd;
+}
+
+.btn-primary:hover {
+  background-color: #014979;
+  border: 1px solid #014979;
+}
+
+.btn-success {
+  padding: 5px 25px;
+  background-color: #014979;
+}
+
+@media(max-width:576px) {
+  .question {
+    width: 100%;
+    word-spacing: 2px;
+  }
+}
